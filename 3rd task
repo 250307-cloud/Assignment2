@@ -13,18 +13,19 @@ int main() {
     while (i < n){
         int x;
         cin >> x;
-
+        i++;
+        
         if (x == 0){
             c = 0;
+            continue;
         }
-        else {
-            c++;
+        
+        c++;
 
-            if (c > max){
-                max = c;
-            }
+        if (c > max){
+            max = c;
         }
-        i++;
+        
         
         
     }
