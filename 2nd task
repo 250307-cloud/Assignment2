@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    long long x;
+    cin >> x;
+    if (x < 0){
+        cout << "false";
+        return 0;
+    }
+
+    long long original = x;
+    long long reversed = 0;
+
+    while (x > 0){
+        int y = x % 10;
+        reversed = reversed * 10 + y;
+        x = x / 10;
+        
+    }
+
+    if (original == reversed){
+
+        cout << "true";
+
+    }
+    else {
+
+        cout << "false";
+            
+    }
+    return 0;
+}
